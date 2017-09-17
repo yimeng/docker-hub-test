@@ -4,7 +4,7 @@ FROM ubuntu
 # Install Java.
 RUN \
   apt-get update && \
-#  apt-get install openjdk-8-jre -y && \
+  apt-get install openjdk-8-jre -y && \
   rm -rf /var/lib/apt/lists/*
 
 # Define working directory.
