@@ -1,6 +1,8 @@
 # Pull base image.
 FROM ubuntu
 
+RUN sed -i 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//http:\/\/mirrors\.163\.com\/ubuntu\//g' /etc/apt/sources.list
+
 # Install Java.
 RUN \
   echo "hello" && \
