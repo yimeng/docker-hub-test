@@ -3,6 +3,7 @@ FROM ubuntu
 
 # Install Java.
 RUN \
+  echo "hello" && \
   apt-get update && \
   apt-get install openjdk-8-jre -y && \
   rm -rf /var/lib/apt/lists/*
